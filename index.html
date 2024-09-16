@@ -80,7 +80,7 @@
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
+										<img src="images/IMG_3133.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">老屋翻新</a></h3>
@@ -89,7 +89,7 @@
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/廚具01.jpg" alt="" />
+										<img src="images/IMG_5787.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">廚具規劃</a></h3>
@@ -98,20 +98,11 @@
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
+										<img src="images/IMG_8815.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">裝潢材料介紹</a></h3>
 										<p>選材參考</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">協力廠商</a></h3>
-										<p>協力廠商</p>
 									</header>
 								</article>
 							</section>
@@ -120,9 +111,9 @@
 							<section id="two">
 								<div class="inner">
 									<header class="major">
-										<h2>Massa libero</h2>
+										<h2>公司簡介</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<p>於2024年取得室內裝修乙級技術士，並成立阿宏室內設計公司，開業至今</p>
 									<ul class="actions">
 										<li><a href="landing.html" class="button next">Get Started</a></li>
 									</ul>
@@ -135,6 +126,41 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
+								<!-- 這一行需要加上onsubmit="return mailto()" -->
+								<form method="post" action="#"  onsubmit="return mailto()">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">名稱</label>
+											<input type="text" name="name" id="name" />
+										</div>
+									</div  class="field half>
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">訊息</label>
+									<textarea name="message" id="message" rows="6"></textarea>
+
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="傳送" class="primary" /></li></a>
+								<li><input type="reset" value="清除" /></li>
+							</ul>
+							<!-- 呼叫email程式的語法:start -->
+							<script>
+								 function mailto() 
+								 {name = document.getElementsByName('name')[0].value; // 把使用者輸入的名稱拿出來用
+								  email = document.getElementsByName('email')[0].value; // 把使用者輸入的email拿出來用
+								  message = document.getElementsByName('message')[0].value.replaceAll('\n', '%0D%0A'); // 把使用者輸入的內容拿出來用
+								  window.location.href = "mailto:xxxxxxxxxx@gmail.com?subject=我沒有問題&body=您好, 我是" + name + ":%0D%0A" + message;
+								  return false;
+								 }
+								</script>
+								 <!-- 呼叫email程式的語法:end -->
+								</form>
+							</section>
+
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
